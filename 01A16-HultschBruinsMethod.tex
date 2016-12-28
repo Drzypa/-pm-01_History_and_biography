@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HultschBruinsMethod}
+\pmcreated{2013-03-22 15:50:39}
+\pmmodified{2013-03-22 15:50:39}
+\pmowner{milogardner}{13112}
+\pmmodifier{milogardner}{13112}
+\pmtitle{Hultsch-Bruins method}
+\pmrecord{94}{37824}
+\pmprivacy{1}
+\pmauthor{milogardner}{13112}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A16}
+\pmsynonym{proto-number theory}{HultschBruinsMethod}
+\pmsynonym{Egyptian math}{HultschBruinsMethod}
+\pmsynonym{Egyptian fractions}{HultschBruinsMethod}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+INTRODUCTION: The Rhind Mathematical Papyrus (RMP), written by \PMlinkexternal{Ahmes}{http://en.wikipedia.org/wiki/Ahmes} in 1650 BCE, and the Kahun Papyrus (KP), written 200 years earlier, both began with 2/n tables. Scholars have debated the topic for 130 years with little success during the 19th and 20th centuries. How did Middle Kingdom scribes generally convert 1/p, 2/p, 2/n, n/p and n/pq to optimized, but not optimal, unit fraction series? 
+
+The first number theory solution used aliquot parts. The method was suggested by F. Hultsch in 1895. Hultsch considered even denominators for first partitions available between p/2 and p. Each denominator was inspected for composite and prime divisors. For example, Ahmes converted 2/19 considering the denominators of possible first partitions: 1/10, 1/12, 1/14, 1/16, and 1/18 were considered as the aliquot parts of 12 (12, 6, 4, 3, 2 and 1) such that (2/19 - 1/12) created a remainder 5/228. The remainder's numerator 5 was additively written as (3 + 2).  Hultsch-Bruins shows that (3 + 2) was obtained from the divisors  of denominator 228, from the set: {12, 6, 4, 3, 2, 1}.
+
+Ahmes' 2/n conversion to rational number method considered the aliquot parts of the divisor of the reported first partition. The scribe selecting a LCM that scaled 2/n to 2m/mn. The divisors of mn were selected that summed to 2m with the additive aliquot parts written in red. RMP 36 described details of the use of an LCM and its associated aliquot method. 
+
+Composite and primes factor first partition denominators optimized the conversion of n/p and n/pq by picking a LCM that created additive \PMlinkexternal{red auxiliary numbers}{http://planetmath.org/encyclopedia/FirstLCMMethodRedAuxiliaryNumbers.html}.  
+
+Before discussing a related medieval conversion of n/p method, let's look at Hultch-Bruins in teh context of the 1650 BCE Egyptian unit fraction series. In the RMP the first 3-term series was 2/19. The rational number 2/19 was converted to an optimal Egyptian fraction series by selecting LCM 12, between the range 19/2 < m < 19. Ahmes' LCM method marked in red the divisors of denominator mn that best summed to numerator 2m. 
+
+Concerning 2/19, Ahmes would have considered five possible first partitions: 1/10, 1/12, 1/14, 1/16, and 1/18, which meant five possible LCMs 12, 10, 14, 16 and 18 were pondered. Ahmes selected 1/12, or LCM 12, without an explanation. By inserting the aliquot parts (divisors) of 12, Ahmes' endecoding pattern was nearly exposed by Hultsch in 1895. 
+
+Ahmes actually converted 2/19 by considering the divisors of 12 (12, 6, 4, 3, 2, 1) by a mental process in the 2/n table, and an explicit problem in \PMlinkexternal{RMP 36}{http://planetmath.org/encyclopedia/RMP36AndThe2nTable.html}.
+ 
+A scribal shorthand set red auxiliary numbers were applied such that 2/19 = 1/12 + 5/(12*19), was likely a mental process such that $$2/19*(12/12)= 24/228 = (19 + 3 + 2)/228 = 1/12 + 1/75 + 1/114$$, as the formal method translated into modern arithmetic.
+
+Ahmes calculate the remainder numerator 5 by selecting two or more divisors of 12. In descending order unit fraction series were written using 228 as the denominator. Ahmes considered two solutions (4 + 1) and (3 + 2). Ahmes selected (3 + 2) by writing 2/19 = 1/12 + (3+2)/228 = 1/12 + 1/76 1/114, the later in the ancient Egyptian fraction notation when the (+) signs are removed. 
+
+Considering the conversion of 2/91, often noted by historians as an odd Egyptian fraction series, its solution is obtained by Hultsch-Bruins. Ahmes selected the first partition 1/70, meaning that LCM 70 was selected, after considering alternate even first partitions between 1/46 and 1/90. Ahmes inspected the denominator of 1/70, and found composite and prime divisors: 35, 14, 7, 5, 2, 1, such that 49, taken from the remainder (140 - 91)/(70*91), found 35 + 14 allowing:
+
+2/91 = 1/70 + 49/(70*91) = 1/70 + 1/130
+
+by the shorthand method
+
+and,
+
+2/91*(70/70) = 140/6370 = (91 + 49)/6340 = 1/70 + 1/130 
+
+by the formal multiple method.
+
+As a medieval great grandchild of Ahmes arithmetic, that had been passed down though Egyptian, Greek, Hellene, and Arab cultures, Fibonacci selected single multiples that converted most 2/n table members. Like Ahmes, when a difficult rational number was observed, a second LCM was chosen, as Ahmes replaced n/p with (n - 2)/p + 2/p.  
+
+A one phase LCM method appeared in 24 of 26 series of the 200 year older Egyptian Mathematical Leather Roll. The two exceptions used two LCMs depicted by out-of-order series, selecting LCMs 25 and 6 to convert 1/8 and 1/18. 
+
+In 1944, E. M. Bruins independently verified Hultsch's 49 year old solution to the 2/$n$th table problem.  Math historians and Egyptologists had debated the validity of the Hultsch-Bruin method for over 60 years. A long overdue honor to F. Hultsch needs to be published.
+
+OPTIMAL MULTIPLE INFORMATION: In 2002 a complete Latin to English translation of Leonardo de Pisa (Fibonacci)'s Liber Abaci became available. Fibonacci's well known book was translated by L.E. Sigler. Fibonacci had practiced a 3,200 year old number theory craft by primarily considering a multiple method. Fibonacci also used a second partition method. When first partitions did not convert to an Egyptian fraction series second partitions solved the problem. For code breakers the Liber Abaci changed the RMP 2/n table debate. The Liber Abaci showed that the Hultsch-Bruins method was a shorthand method that found optimized, but not optimal, \PMlinkexternal{RMP 2/n table}{http://rmprectotable.blogspot.com} Egyptian fraction series. Ahmes discussed several details of his shorthand in \PMlinkexternal{RMP 36 and the 2/n table}{http://planetmath.org/encyclopedia/RMP36AndThe2nTable.html}.
+
+The \PMlinkexternal{Liber Abaci}{http://liberabaci.blogspot.com} summarizes three versions of the Hultsch-Bruins method. Yet, it too used multiples in the style of Ahmes. Sigler's seventh section describes seven medieval and ancient Egyptian fraction methods. Methods four and five discuss Leonardo examples that may detail a H-B method. Multiple methods dominated Fibonacci's Egyptian fraction writings. Leonardo selected unit fraction first partitions, subtracting it from the vulgar fraction being converted to an elegant Egyptian fraction series. Method six included a medieval version of the method. For example, to convert 20/53 to an Egyptian fraction series, Leonardo selected 18/48, 3/8 raised to a multiple of 6, following a rule set down in the EMLR and the RMP, as stated as Leonardo's first method), writing the medieval answer:  20/53 = 18/48 1/8 0/53 (written in reverse order) within a notation that goes beyond the scope of this discussion. For additional details of the medieval notation, and Liber Abaci Egyptian fraction topics refer to Wikipedia and linked Egyptian fractions discussions.
+
+Leonardo's seventh Egyptian fraction method discusses a rational number that can not be solved by one subtraction step by either following H-B or a multiple method. In this case Leonardo selected a second partition, or a second multiple, a medieval method that J.J. Sylvester in 1891 improperly reported as Fibonacci's n-step greedy algorithm.
+
+In 2009, \PMlinkexternal{RMP 36}{http://ahmespapyrus.blogspot.com/2009/01/ahmes-papyrus-new-and-old.html} was translated to show that 30/53,28/53,15/53, 5/53, 3/53 and 2/53 were converted to optimized, but not optimal, unit fraction series, by using H-B aliquot part additive numerators. The additive numerators were written in red in RMP 36, detailing Ahmes' 2/n table method by the 2/53 conversion method.
+
+CONCLUSION Sigler's 2002 publication of the Liber Abaci cites seven multiple methods that partitioned rational numbers into elegant Egyptian fraction series. The Liber Abaci methods connect to 3,200 older RMP 2/n table methods. Egyptian and medieval scribes considered p and q as prime numbers. Modern number theory through Hultsch-Bruins and other historians began to decode the \PMlinkexternal{RMP 2/n table}{http://rmprectotable.blogspot.com}, the \PMlinkexternal{Kahun 2/n table}{http://en.wikipedia.org/wiki/Kahun_Papyrus}, and aspects of other Egyptian fraction texts before 1900. Yet, the 4,000 year old Egyptian texts were reported as limited to additive methods (suggested by Peet, Chace, DE Smith, Neugebauer, et al) for over 100 years. The RMP 2/n table was proven in 2005 and confirmed in 2009. The method contained an innovative 'red auxiliary' LCM method, thanks to decoding clues provided by the Hultsch-Bruins method, and other proto-number theory researchers parse RMP data considering p and q as prime numbers.
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PiSearchPage}
+\pmcreated{2013-03-22 17:04:54}
+\pmmodified{2013-03-22 17:04:54}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Pi-Search Page}
+\pmrecord{4}{39375}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A61}
+\pmclassification{msc}{01A65}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Because $\pi \approx 3.14159265$ is an irrational number, its digits in any base are infinite. Hypothetically, any finite group of digits can be found as a substring in the digits of $\pi$, provided one looks far enough.
+
+The {\em Pi-Search Page} allows users to search the 200 million base 10 digits of $\pi$ for specific digit substrings. For each successful search, the page returns the desired substring with surrounding digits. Most Social Security numbers occur somewhere in the search range. Credit card numbers (16-digit numbers) are unlikely.
+
+The first few digits of certain constants can be found. For $\pi$ itself, the ``string 31415926 occurs at position 50,366,472 counting from the first digit after the decimal point." For $e$, ``string 27182818 occurs at position 73,154,827 counting from the first digit after the decimal point."
+
+In 2005, Robert Happelberg published thirteen pages of digits of $\pi$ in which he highlighted the positive integers in order as the occurred in $\pi$'s digits (i.e., {\bf 1}4159{\bf 2}65{\bf 3}589793238{\bf 4}62643383279{\bf 5}028841971{\bf 6}93993{\bf 7}510). However, it turned out that Happelberg had ignored numbers split at line ends. With the help of the Pi-Search Page, the OEIS added sequence A103186, which lists the first occurrence of $n$'s base 10 digits as a substring in $\pi$. Graeme McRae investigated potential overlaps (such as ``112'', which contains both ``11'' and ``12''). Besides 33 and 34, he found no such overlaps in the first hundred thousand digits of $\pi$ (the limit of the Pi-Search Page at the time), and even that overlap does not affect the overall result significantly: ``this changes only one element of the sequence. $a(34)$ becomes 1700, and $a(35)$ remains 1719.''
+
+The Pi-Search Page is at \PMlinkexternal{http://www.angio.net/pi/bigpi.cgi}{http://www.angio.net/pi/bigpi.cgi}.
+
+\begin{thebibliography}{1}
+\bibitem{rh} R. Happelberg, {\it Bob's Poetry Magazine} {\bf 2} 2 (2005): 3 - 15
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RemainderArithmetic}
+\pmcreated{2013-03-22 15:49:04}
+\pmmodified{2013-03-22 15:49:04}
+\pmowner{milogardner}{13112}
+\pmmodifier{milogardner}{13112}
+\pmtitle{remainder arithmetic}
+\pmrecord{165}{37783}
+\pmprivacy{1}
+\pmauthor{milogardner}{13112}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A16}
+\pmsynonym{proto-number theory}{RemainderArithmetic}
+\pmsynonym{egyptian math}{RemainderArithmetic}
+\pmsynonym{egyptian fractions}{RemainderArithmetic}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{variation}
+\PMlinkescapeword{partition}
+\PMlinkescapeword{scaling}
+\PMlinkescapeword{independent}
+\PMlinkescapeword{translation}
+\PMlinkescapeword{jump}
+\PMlinkescapeword{term}
+\PMlinkescapeword{word}
+\PMlinkescapeword{depth}
+\PMlinkescapeword{degree}
+\PMlinkescapeword{side}
+\PMlinkescapeword{terms}
+\PMlinkescapeword{connected}
+\PMlinkescapeword{link}
+\PMlinkescapeword{parent}
+\PMlinkescapeword{structure}
+\PMlinkescapeword{links}
+\PMlinkescapeword{line}
+\PMlinkescapeword{AD}
+\PMlinkescapeword{basis}
+
+Remainder arithmetic was formalized in ancient Egypt 4,050 years ago. The Akhmim Wooden Tablet (\PMlinkexternal{AWT}{http://en.wikipedia.org/wiki/Akhmim_Wooden_Tablet}), circa 1950 BCE, defined a weights and measures application within a new method for division. The Moscow Mathematical Papyrus and the Rhind Mathematical Papyrus (RMP) divided a hekat unity by 1/3 to (1/4 + 1/16 + 1/4) hejat + 5 ro. The scribe partitioned the unity (64/64) into binary hekat quotients +  1/320  ro remainders. 
+
+Several classe of hekat quotients + remainders were created, three being hin (1/10), dja (1/64) and ro (1/320). 
+
+The new division method defined a quotient and remainder that was inverse to multiplication, as explained in RMP 38. The inverse feature of division defined the multiplication operation, a two-phase definition that anticipated our modern arithmetic operations. 
+
+One aspect of the hekat division method exactly parsed (64/64) by rational numbers n, limited to the range 1/2 less n less 1/64 such that:
+
+(64/64)/n = Q/64 + (R/n)*(1/64)
+
+with Q/64, a binary quotient, and  
+
+(R/n)(1/64), an Egyptian fraction remainder, 
+
+Ahmes scaled the remainder (R/n)(1/64) by (5/5) obtaining (5R/n)*(1/320)
+
+such that:
+
+(64/64)/n = Q/64 + (5R/n)*ro
+
+replacing the number 1/320 with the word ro.
+
+The quotient and scaled remainder method was used hundreds of times in Middle Kingdom texts. 
+
+Scholars did not fully decode the quotient and remainder method until 2005. 
+
+B. A second aspect of the method was reported in ten RMP 47 division problems per:
+
+100-hekat being divided by 10, 20, 30, 40, 50, 60, 70, 80, 90 and 100 in the form
+
+(6400/64)/n = Q/64 + (5R/n)*ro
+
+For example, the n = 70 case reported Q = 91 and R = 30 (since 6400/70 = 91 + remainder 30) such that:
+
+(6400/64)/70 = (64 + 16 + 8 + 2 + 1)/64 + (150/70)ro =
+
+(1 + 1/4 + 1/8 + 1/32 + 1/64)hejat + (2 + 1/7)ro, reported by Robins-Shute in 1987, an arithmetically correct answer.
+
+However, Ahmes converted (2 + 1/7)ro = (2 + [6/42 = (3 + 2 + 1)/42] = (2 + 1/14 + 1/21 + 1/42)ro 
+
+adopting the 2/n table method that converted 2/101 = [12/606 = (6 + 3 + 2 + 1)/606 = 1/101 + 1/202 + 1/303 + 1/606  
+
+followed an earlier EMLR method that wrote 1/101 = 6/606 = (3 + 2 + 1)/606 = 1/202 + 1/303 + 1/606
+
+C. A third aspect of the division method created sub-units m divided by n, Three m/n 'units' included hin (10/n) dja (64/n) and ro (320/n). The divisor n was no longer limited to 1/64 < n < 64. Divisors n could be any rational number. The Rhind Mathematical Papyrus (RMP), circa 1650 BCE, used the method 29 times in problem 81 scaling m to 10, and 320, such that:
+
+10/n hin 
+
+and,
+
+320/n ro
+
+Unit fraction remainders were written in one column, and an equivalent (64/64)/n binary quotient and scaled remainder was written in an adjoining column. The two column data set was reported by Gillings, yet the exact remainder arithmetic aspect of the (64/64) column was not decoded until 2005.
+
+The Akhmim Wooden Table detailed five examples, divisors n: 3, 7, 10, 11 and 13. The Rhind Mathematical Papyrus defined 29 examples in the range 1/64 < n < 64 in one problem, and several other examples in other problems.
+
+The m/n sub-units allowed m to be 10, 64, 320, and other scaled valu8es. For example, the Ebers Medical Papyrus exclusively used the m/n sub-units, several of which have not be scaled. The volume unit used one-part integer quotients, and non-scaled Egyptian fraction remainders units hin, dja, ro, and so forth. For example, a 1/10 hin unit was written 10/n hin, a dja unit was written 64/n dja, and a ro unit was written 320/n ro.
+
+C. The Akhmim Wooden Tablet text was published in 1901, and analyzed by Daressy in 1906. Daressy analyzed the data line by line, correctly reporting three hekat divisions: divisors 3, 7, and 10. Daressy improperly reported divisors 11 and 13.
+
+Hana Vymazalova, a Charles U., Prague grad student published AWT hekat problems by correcting Daressy's two 1906 errors in 2002. Vymazalova proved that all five two-part answers were returned by the AWT scribe to a hekat unity $\frac{64}{64}$ by a reverse process. Vymazalova showed that the AWT scribe had recorded binary quotients, and scaled Egyptian fraction remainders in an innovative exact method, improperly citing Peet's discussion of Daressy's analysis.
+
+D. The second class of remainder arithmetic units are reported in 2,000 Middle and New Kingdom (NK) medical prescriptions recipes. Several of the Middle Kingdom and New Kingdom sub-units had been garbled by translators. In 2002, a German graduate student, Tanja Pommerening, corrected a dja hekat unit, scaled to 1/64.The unit is needed by physicians reconstituting ancient Egyptian medicines, following ancient recipes.
+
+Dr. Tanja Pommerening's 2005 PhD also discussed the dja as a healing unit in a mathematical sense. The dja healing unit corrected rounded-off errors associated with traditional (Horus-Eye) binary series partitions. The healed definition is recorded in hieratic and hieroglyphic symbols. The dja was written in a one-part remainder arithmetic system, 64/n dja. The healed 1/64 unit had corrected an Old Kingdom rounded off error by returning a missing 1/64 unit.
+
+E. The remainder arithmetic was also used by Ahmes to divide rational numbers a/b Today the modern definition of quotient and remainder division is only based on the a/b fraction side of number theory.
+
+F. Summary: Additional details of the 4,000 year old remainder method are found in the \PMlinkexternal{Akhmim Wooden Tablet}{http://akhmimwoodentablet.blogspot.com}. The second remainder arithmetic method was introduced by red auxiliary numbers creating the optimized, but not optimal, \PMlinkexternal{RMP 2/n table}{http://en.wikipedia.org/wiki/RMP_2/n_table}, and expanded to remainder m/n Egyptian fraction sub-units used in several RMP problems and 2,000 medical prescriptions in the medical texts.
+
+
+\begin{thebibliography}{6}
+
+\bibitem{1} Georges Daressy, \emph{"Calculs Egyptiens du Moyan EmpireÃƒÃƒÃƒÃƒÃƒÃ‚Â¢?, Recueil de Travaux Relatifs  De La  Phioogie et al Archaelogie Egyptiennes Et Assyriennes XXVIII, 1906, 62ÃƒÃƒÃƒÃƒÃƒÃ‚Â¢72}, Paris, 1906.
+\bibitem{2} Milo Gardner, \emph{An Ancient Egyptian Problem and its Innovative Solution, Ganita Bharati}, MD Publications Pvt Ltd, 2006.
+\bibitem{3}Richard Gillings, \emph{Mathematics in the Time of the Pharaohs}, Dover Books, 1992.
+\bibitem{4} T.E. Peet, \emph{Arithmetic in the Middle Kingdom}, Journal Egyptian Archeology, 1923.
+\bibitem{5} Tanja Pommerening, \emph{"Altagyptische Holmasse Metrologish neu Interpretiert" and relevant phramaceutical and medical knowledge, an abstract,  Phillips-Universtat, Marburg, 8-11-2004, taken from "Die Altagyptschen Hohlmass}, Buske-Verlag, 2005.
+\bibitem{6} Hana Vymazalova, \emph{The Wooden Tablets from Cairo:The Use of the Grain Unit HK3T in Ancient Egypt, Archiv Orientalai}, Charles U Prague, 2002.
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

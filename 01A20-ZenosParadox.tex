@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZenosParadox}
+\pmcreated{2013-03-22 14:07:50}
+\pmmodified{2013-03-22 14:07:50}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Zeno's paradox}
+\pmrecord{10}{35538}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Imagine the great Greek hero Achilles starting a race with a turtle. Achilles is a fast runner, \PMlinkescapetext{running} $10$ metres per second, while the turtle is slow and runs at one metre per second. Therefore Achilles agrees to give the turtle some advantage and the turtle starts 10 metres in front of Achilles. The ancient Greek philosopher Zeno found the following ``paradox''.
+
+If Achilles wants to get in front of the turtle he first has to run to where the turtle started. But in that time the turtle has bridged some \PMlinkescapeword{distance}distance, which Achilles now has to run in \PMlinkescapetext{order} to take up. But in this time again the turtle has gone for some distance and Achilles is still in behind of the turtle. This process continues forever and apparently Achilles cannot pass the turtle.
+
+To solve this paradox we have to take a look at the times needed to run these \PMlinkescapetext{distances}. It takes Achilles one second to get to where the turtle started. In this time the turtle runs one metre. It takes only the tenth of a second for Achilles to get there as well. The turtle now runs 10 centimetres, which Achilles passes in one hundredth of a second and so on. So Achilles reaches the turtle after
+$$1\rm{s}+0.1\rm{s}+0.01\rm{s}+\dots=1.1111\ldots\rm{s}.$$
+The paradox can be solved, if we take into consideration the fact that an \PMlinkescapetext{infinite} series (a sum of infinitely many numbers) may well converge. 
+
+To see that the paradox actually never arises, we consider a race, where the turtle gets an advantage of $d$ and runs at a speed $v$. Achilles runs at a speed $xv$ with $x>1$. Then the time $t$ needed for Achilles to reach the turtle is given as:
+$$t=\frac{d}{v}\sum_{j=1}^\infty\frac{1}{x^j},$$
+which converges if and only if $x>1$, so in any possible race Achilles can catch up with the turtle, as was expected.
+%%%%%
+%%%%%
+\end{document}

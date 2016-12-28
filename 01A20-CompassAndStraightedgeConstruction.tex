@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompassAndStraightedgeConstruction}
+\pmcreated{2016-03-14 20:38:32}
+\pmmodified{2016-03-14 20:38:32}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{compass and straightedge construction}
+\pmrecord{23}{39579}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{fixed link}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{51M15}
+\pmsynonym{straightedge and compass construction}{CompassAndStraightedgeConstruction}
+\pmsynonym{ruler and compass construction}{CompassAndStraightedgeConstruction}
+\pmsynonym{compass and ruler construction}{CompassAndStraightedgeConstruction}
+\pmrelated{ConstructibleNumbers}
+\pmrelated{TheoremOnConstructibleAngles}
+\pmrelated{MotivationOfDefinitionOfConstructibleNumbers}
+\pmrelated{ClassicalProblemsOfConstructibility}
+\pmdefines{compass}
+\pmdefines{straightedge}
+\pmdefines{ruler}
+\pmdefines{constructible}
+\pmdefines{collapsible compass}
+\pmdefines{collapsible}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+\PMlinkescapeword{argument}
+\PMlinkescapeword{difference}
+\PMlinkescapeword{essential}
+\PMlinkescapeword{level}
+\PMlinkescapeword{measure}
+\PMlinkescapeword{open}
+\PMlinkescapeword{order}
+\PMlinkescapeword{represents}
+\PMlinkescapeword{word}
+
+In order to define what a compass and straightedge construction is, some preliminary definitions are \PMlinkescapetext{necessary}:
+
+\begin{itemize}
+\item A \emph{compass} is a tool which can be used for drawing circles, or arcs thereof, whose radii are sufficiently small, and for measuring lengths.
+\item A \emph{straightedge} is a tool which can be used for drawing lines, or \PMlinkname{segments}{LineSegment} thereof.
+\end{itemize}
+
+Some people use the word \emph{ruler} to refer to the tool that is called a straightedge here.  This can cause some confusion, however, because outside of mathematics, a ruler is used to measure any \PMlinkname{length}{BasicLength} desired.  This is \emph{not} a permissible tool for compass and straightedge constructions.
+
+With these preliminaries out of the way, we can now proceed to the main definition.
+
+A \emph{compass and straightedge construction} is the provable creation of a geometric figure on the Euclidean plane (or complex plane) such that the figure is created using only a compass, a straightedge, and specified geometric figures.
+
+Typically, if no preexisting geometric figure is specified, the tacit assumption is that one can use a line segment of length $1$.  Moreover, in such instances, one can specify what length represents $1$, but it must remain constant throughout the construction.
+
+A geometric figure is \emph{constructible} if it can be made from a compass and straightedge construction.
+
+One has to be very careful with the terminology associated with compass and straightedge constructions.  For example, the phrase ``A $20^{\circ}$ angle is not constructible with compass and straightedge'' refers to the fact that a compass and straightedge construction of a $20^{\circ}$ angle is not possible using the tacit assumption as described above.  As another example, the following is an erroneous argument regarding compass and straightedge constructions:
+
+\begin{quote}
+A line segment of length $\pi$ is constructible because, given a line segment of length $1$, I can extend it as a ray.  Then I can measure the distance between the two endpoints with my compass.  After that, I can open the compass $\pi$ times wider.  Finally, I can mark that distance on the ray from one of the endpoints of the original line segment.
+\end{quote}
+
+The above argument is one of many reasons why the word \emph{provable} appears in the definition.  One can open the compass however wide one wants, and one can mark arcs and points however one wants, but the construction is invalid unless one can prove indisputably that the construction really is what is stated.  In the above example, one cannot prove that the compass was opened \emph{exactly} $\pi$ times wider than the length of the original line segment.
+
+Compass and straightedge constructions are of historical significance.  The ancient Greeks are the most well-known civilization for investigating these constructions on an elementary level.  It should be pointed out that the compasses that they used were \emph{collapsible}.  That is, you could open the compass and draw an arc, but immediately after you removed a point of the compass from the plane where you drew the arc, the compass would close completely.  It turns out that whether a collapsible compass or a modern-day compass is used to perform these constructions makes no difference.  This statement is justified by the fact that one can use a collapsible compass to construct a circle with a given radius at \emph{any} point as shown by \PMlinkname{this entry}{circlewithgivencenterandgivenradius}.
+
+One of the greatest applications of abstract algebra is being able to determine which constructions are possible and which are not.  The \PMlinkescapetext{connection} between constructions and abstract algebra is that the set of all constructible points is in one-to-one correspondence with the elements of the field of constructible numbers.  Without abstract algebra, one would be hard pressed to prove statements about constructibility such as ``A $20^{\circ}$ angle is not constructible with compass and straightedge.''
+%%%%%
+%%%%%
+\end{document}

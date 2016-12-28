@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Numerology}
+\pmcreated{2013-03-22 16:29:06}
+\pmmodified{2013-03-22 16:29:06}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{numerology}
+\pmrecord{7}{38653}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{01A65}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Modern {\em numerology} is the divination of the future by means of reducing the name and birthdate of the person for whom the chart is being cast for to single base 10 digits by means of modular arithmetic. The digits are assigned abstract human qualities beforehand, and once the digits are obtained, arithmetic (or any kind of mathematics) no longer plays any r\^ole in the process. Numerology is considered with as much disdain by mathematicians as astrology is by astronomers, if not more so.
+
+The letters of the person's name are assigned numerical values, (e.g., A = 1, B = 2, C = 3, etc.) and added up, then the digital root of the sum is obtained. (It doesn't matter if J = 10 or J = 1, the overall result will be the same.) The same procedure applies for the birthdate (e.g., January = 1, February = 2, etc.) Any computer algebra system capable of string manipulation by ASCII or Unicode character codes is capable of performing calculations for numerology. For example, Mathematica provides the \verb=FromCharacterCode= and \verb=ToCharacterCode= functions. One only needs to remember to subtract 64 or 96 (depending on case), to use only one case and to not use spaces.
+
+Ancient Greeks such as Pythagoras believed that numbers indeed possessed abstract human qualities based on their mathematical properties, or perhaps even occult significance relevant to mystery religions. There is no vestige of this in modern numerology, but mathematics carries vestiges of this in some of its terminology, if nothing else (for example, the amicable numbers).
+
+The term ``numerology'' is sometimes used derogatorily to refer to what could more accurately be described as ``number folklore.'' Richard Guy's strong law of small numbers ``suggests that number folklore is likely to develop'' as a result of people liking to find patterns from finite amounts of data. (Slone, 2007)
+
+\begin{thebibliography}{6}
+\bibitem{kl} K. Lagerquist and L. Lenard, {\it The Complete Idiot's Guide to Numerology} Indianapolis: Macmillan (1999)
+\bibitem{ms} M. Slone, personal communication (2007)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

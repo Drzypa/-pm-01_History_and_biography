@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassicalProblemsOfConstructibility}
+\pmcreated{2013-03-22 17:18:37}
+\pmmodified{2013-03-22 17:18:37}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{classical problems of constructibility}
+\pmrecord{14}{39659}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{51M15}
+\pmclassification{msc}{12D15}
+\pmrelated{TheoremOnConstructibleNumbers}
+\pmrelated{TheoremOnConstructibleAngles}
+\pmrelated{CompassAndStraightedgeConstruction}
+\pmrelated{ConstructibleAnglesWithIntegerValuesInDegrees}
+\pmdefines{trisecting the angle}
+\pmdefines{doubling the cube}
+\pmdefines{squaring the circle}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+\newtheorem{thm}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{analytic}
+\PMlinkescapeword{circle}
+\PMlinkescapeword{constructible angle}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{even}
+\PMlinkescapeword{minimal}
+\PMlinkescapeword{place}
+
+There are at least three classical problems of constructibility:
+
+\begin{enumerate}
+\item \emph{Trisecting the angle}: Can an arbitrary angle be trisected?
+\item \emph{Doubling the cube}: Given an arbitrary cube, can a cube with double the volume be constructed?
+\item \emph{Squaring the circle}: Given a \PMlinkname{circle}{Circle}, can a square with the same area as the circle be constructed?
+\end{enumerate}
+
+The ancient Greeks knew that these constructions were possible using various tools:
+
+\begin{itemize}
+\item Archimedes trisected the angle using a compass and a ruler with one mark on it.  His construction is discussed in the entry trisection of angle.
+\item Menaechmus constructed a line segment of length $\sqrt[3]{2}$ by determining the intersections of the parabolas $y^2=2x$ and $x^2=y$.  This is an amazing feat considering that analytic \PMlinkescapetext{geometry} was not known at the time.
+\item A way of squaring the circle is discussed in the entry variants on compass and straightedge constructions.
+\end{itemize}
+
+Since the ancient Greeks were interested in performing constructions with the minimal amount of tools, they wanted to know whether these constructions were possible using only compass and straightedge.  With this constraint in place, answers were elusive until the advent of abstract algebra.  The problem was that, working in geometry alone, there is really no way to \emph{prove} that a construction is impossible.  By using abstract algebra, people could finally prove that certain compass and straightedge constructions were impossible.
+
+The discovery that trisecting the angle using only compass and straightedge is impossible is attributed to Pierre Wantzel.  He actually proved a sharper result from which the result about trisecting the angle immediately follows.
+
+\begin{thm}[Wantzel]
+It is impossible to trisect a $60^{\circ}$ angle using only compass and straightedge.
+\end{thm}
+
+\begin{proof}
+It should first be noted that $60^{\circ}$ is a \PMlinkname{constructible angle}{Constructible2} since $\cos 60^{\circ}=\frac{1}{2}$ is a constructible number.  (See the theorem on constructible angles for more details.)  Thus, we are working in the field of constructible numbers.
+
+Suppose that $20^{\circ}$ is a constructible angle.  Then $\cos 20^{\circ}$ is also a constructible number.  Using the \PMlinkname{triple angle formulas}{TrigonometricIdentities}, we have that $\cos 60^{\circ}=4\cos^3 20^{\circ}-3\cos 20^{\circ}$.  Thus, $\frac{1}{2}=4\cos^3 20^{\circ}-3\cos 20^{\circ}$.  Therefore, $8\cos^3 20^{\circ}-6\cos 20^{\circ}=1$.  Hence, $(2\cos 20^{\circ})^3-3(2\cos 20^{\circ})-1=0$.
+
+Let $\alpha=2\cos 20^{\circ}$.  Then $\alpha$ is a constructible number and $\alpha^3-3\alpha-1=0$.  Since $1$ and $-1$ are not roots of $x^3-3x-1$, the polynomial is \PMlinkname{irreducible}{IrreduciblePolynomial} over $\mathbb{Q}$ by the rational root theorem.  Thus, $x^3-3x-1$ is the minimal polynomial for $\alpha$ over $\mathbb{Q}$.  Hence, $[\mathbb{Q}(\alpha)\!:\!\mathbb{Q}]=3$, contradicting the theorem on constructible numbers.  The result follows.
+\end{proof}
+
+The discovery that doubling the cube using only compass and straightedge is impossible is also attributed to Pierre Wantzel.
+
+\begin{thm}[Wantzel]
+Doubling the cube is impossible using only compass and straightedge.
+\end{thm}
+
+\begin{proof}
+By scaling so that the sides of the original cube are of length $1$, the possibility of this construction is \PMlinkname{equivalent}{Equivalent3} to $\sqrt[3]{2}$ being a constructible number.  Since $[\mathbb{Q}(\sqrt[3]{2})\!:\!\mathbb{Q}]=3$, the theorem on constructible numbers yields that $\sqrt[3]{2}$ is not a constructible number.
+\end{proof}
+
+The discovery that squaring the circle is impossible is attributed to Ferdinand von Lindemann.
+
+\begin{thm}[Lindemann]
+Squaring the circle is impossible using only compass and straightedge.
+\end{thm}
+
+\begin{proof}
+By scaling so that the \PMlinkname{radius}{Radius2} of the circle is of length $1$, the possibility of this construction is equivalent to $\sqrt{\pi}$ being a constructible number.  Note that $\pi$ is transcendental.  (See \PMlinkname{this result}{ProofOfLindemannWeierstrassTheoremAndThatEAndPiAreTranscendental2} for more details.)  Thus, $\sqrt{\pi}$ is also transcendental.  Therefore, $[\mathbb{Q}(\sqrt{\pi})\!:\!\mathbb{Q}]$ is not even finite, let alone a power of $2$.  The theorem on constructible numbers yields that $\sqrt{\pi}$ is not a constructible number.
+\end{proof}
+
+\begin{thebibliography}{9}
+\bibitem{unclejoe} Rotman, Joseph J. {\em A First Course in Abstract Algebra}. Upper Saddle River, NJ: Prentice-Hall, 1996.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

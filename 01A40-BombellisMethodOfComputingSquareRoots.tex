@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BombellisMethodOfComputingSquareRoots}
+\pmcreated{2013-03-22 19:05:59}
+\pmmodified{2013-03-22 19:05:59}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Bombelli's method of computing square roots}
+\pmrecord{15}{41992}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A40}
+%\pmkeywords{Bombelli}
+\pmrelated{BabylonianMethodOfComputingSquareRoots}
+\pmrelated{SquareRootOfPolynomial}
+\pmrelated{KalleVaisala}
+\pmrelated{PrimitiveRecursiveNumber}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{right} \PMlinkescapeword{digit} \PMlinkescapeword{digits} \PMlinkescapeword{remainder}
+
+In the following, all numbers are positive real numbers.\\
+
+The equations
+$$\sqrt{100a} \;=\; 10\sqrt{a} \quad \mbox{and} \quad \sqrt{\frac{a}{100}} \;=\; \frac{\sqrt{a}}{10}$$
+imply, that if the decimal point of the radicand of a square root is moved two steps to the right or to the left, then the value of the square root changes only such that its decimal point moves one step in the same direction.\\
+
+If the integer part of a number has one or two \PMlinkid{digits}{3313}, the integer part of its square root has evidently one digit.\, Accordingly, one may infer the following rule:
+
+\emph{If the integer part of the radicand is \PMlinkescapetext{cut}, starting from the decimal point, into pieces of two digits (when the leftmost piece may consist of only one digit), then the number of the pieces expresses the number of digits in the integer part of the square root.}\\
+
+We now illustrate the computing of square root by using $\sqrt{2238.9}$ as an example, and denote its first digits by $x,\,y,\,z,\ldots$
+
+The integer part of $\sqrt{22.389}$ has one digit, which is $x$.\, This is the \PMlinkid{greatest}{6118} one-digit integer whose square is at most 22.\, Hence,\, $x = 4$.
+
+By the above rule, the integer part of $\sqrt{2238.9}$ has two digits and thus equals to\, $10x\!+\!y = 40\!+\!y$.\, The number $y$ is the greatest of the one-digit integers such that the square
+$$(10x\!+\!y)^2 \;=\; 100x^2\!+\!2\!\cdot\!10xy\!+\!y^2 \;=\; 100x^2\!+\!y(10\!\cdot\!2x\!+\!y)$$
+does not exceed 2238, i.e. such that the product \,$y(10\!\cdot\!2x\!+\!y) = y(80\!+\!y)$\, is at most the remainder
+$$2238\!-\!100x^2 \;=\; 638.$$
+We see that\, $y = 7$.
+
+We can continue similarly and determine next the digit $z$.\, The calculations may be organised right from the start as follows:\\
+
+\begin{tabular}{lcrrrrrrrrrrrrr}
+$\sqrt{}
+$ & $ 22$ & $38. $ & $90$ & $ $ & $  $ & $=$ & $ $ & $4$ & $7. $ & $3$ & $1$ & $7$ & $\ldots$\\
+$$& $ 16$ & $    $ & $  $ & $ $ & $  $ & $ $ & $ $ & $4$ & $   $ & $ $\\
+                          \cline{2-3} \cline{9-10}
+$$& $\;6$ & $38\;$ & $  $ & $ $ & $  $ & $ $ & $ $ & $8$ & $7\;$ & $ $\\
+$$& $\;6$ & $09\;$ & $  $ & $ $ & $  $ & $ $ & $ $ & $ $ & $7\;$ & $ $\\
+                          \cline{2-4} \cline{9-11}
+$$& $   $ & $29\;$ & $90$ & $ $ & $  $ & $ $ & $ $ & $9$ & $4\;$ & $3$\\
+$$& $   $ & $28\;$ & $29$ & $ $ & $  $ & $ $ & $ $ & $ $ & $   $ & $3$\\
+                          \cline{3-5} \cline{9-12}
+$$& $   $ & $ 1\;$ & $61$ & $00$& $  $ & $ $ & $ $ & $9$ & $4\;$ & $6$ & $1$\\
+$$& $   $ & $    $ & $94$ & $61$& $  $ & $ $ & $ $ & $ $ & $   $ & $ $ & $1$\\
+                          \cline{4-6} \cline{9-13}
+$$& $   $ & $    $ & $66$ & $39$& $00$ & $ $ & $ $ & $9$ & $4\;$ & $6$ & $2$ & $7$\\
+$$& $   $ & $    $ & $66$ & $23$& $89$ & $ $ & $ $ & $ $ & $   $ & $ $ & $ $ & $7$\\
+                          \cline{4-6}
+$$& $   $ & $    $ & $  $ & $15$& $11$ & $ $ & $ $ & $ $ & $   $ & $\ldots$ & $$ & $$\\
+$$& $   $ & $    $ & $  $ & $  $& $\ldots$ & $$ & $$ & $$ & $$ & $$ & $$ & $$
+
+\end{tabular}
+
+The algorithm:
+
+$1^\circ$.\, Starting from the decimal point, the radicand is \PMlinkescapetext{cut} into pieces of two digits in either directions.
+
+$2^\circ$.\, The first digit (4) of the square root is the greatest one-digit integer whose square does not exceed the first piece.\, The difference of the first piece and that square is concatenated with the second piece, giving the \emph{first remainder} (638); the sum of the factors (4 and 4) of the square is the \emph{first sum} (8).
+
+$3^\circ$.\, The second digit (7) of the square root is the greatest one-digit integer such that the product of it and with it concatenated first sum (87) does not exceed the first remainder.\, The difference of the first remainder and that product is concatenated with the third piece, giving the \emph{second remainder} (2990); the sum of the factors (87 and 7) of the product is the \emph{second sum} (94).
+
+The procedure continues similarly.\, The decimal point of the square root is put when the last piece of the integer part of the radicand has been used.\\
+
+Note that this algorithm produces the right digits of the square root one by one.
+
+
+\begin{thebibliography}{9}
+
+\bibitem{RB}{\sc Raffaele Bombelli:} \emph{L'Algebra.}\, Bologna (1572---1929). (See \PMlinkexternal{algoritmo di Bombelli}{http://it.wikipedia.org/wiki/Metodi_per_il_calcolo_della_radice_quadrata}).
+
+\bibitem{VA}{\sc K. V\"ais\"al\"a:}  \emph{Algebran oppi- ja esimerkkikirja I}.\, Fifth edition.  Werner S\"oderstr\"om osakeyhti\"o, Porvoo \& Helsinki (1952).
+
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VariantsOnCompassAndStraightedgeConstructions}
+\pmcreated{2013-03-22 17:14:52}
+\pmmodified{2013-03-22 17:14:52}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{variants on compass and straightedge constructions}
+\pmrecord{12}{39580}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Feature}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{51M15}
+\pmrelated{TrisectionOfAngle}
+\pmdefines{marked ruler}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+\PMlinkescapeword{algebra}
+\PMlinkescapeword{measure}
+\PMlinkescapeword{order}
+\PMlinkescapeword{preserve}
+\PMlinkescapeword{string}
+\PMlinkescapeword{type}
+
+Many variants on compass and straightedge constructions have been investigated.  The first type that will be discussed here is the removal of one of these tools.
+
+It is pretty clear that one cannot construct much with just a straightedge.  With this tool, line segments can be extended in either direction as far as one likes, but that is about all.
+
+A more interesting idea is getting rid of the straightedge and using only the compass.  Unfortunately, no line segments can now be drawn, but using only the compass always enables us to find at least two points on the line that is needed.  Thus, using the convention that determining two points on a line also determines the line, the compass is the only tool that is \PMlinkescapetext{essential}.  It turns out that the straightedge is only useful for drawing lines, not for determining points.  On the other hand, being able to use the straightedge makes such constructions easier, which is why it is still used in these constructions.
+
+Another type of variants on compass and straightedge constructions is introducing new tools.  Probably the best known example of this variant is the one in which a sufficiently long piece of string is allowed.  (In the spirit of traditional constructions, marking lengths on the string with a writing utensil is not allowed; however, using it like a compass to measure lengths is allowed.)  The ability to use this tool changes the nature of constructions drastically.  For example, with a compass, a straightedge, and a piece of string, one can construct a line segment of length $\pi$ given a line segment of length $1$.  Here is how:
+
+\begin{enumerate}
+\item Construct a circle with radius $1$.
+
+\begin{center}
+\begin{pspicture}(-1,-1)(7,1)
+\psline(0,0)(1,0)
+\pscircle[linecolor=blue](0,0){1}
+\psdots(0,0)
+\end{pspicture}
+\end{center}
+
+\item Extend the line segment sufficiently far in one direction.
+
+\begin{center}
+\begin{pspicture}(-1,-1)(7,1)
+\psline(0,0)(1,0)
+\pscircle(0,0){1}
+\psline[linecolor=blue]{->}(1,0)(7,0)
+\psdots(0,0)
+\end{pspicture}
+\end{center}
+
+\item Use the string to measure the circumference of the circle.  Keeping your fingers on the string in order to preserve the length of the circumference, straighten the string out and mark this length off on the ray from the previous step.
+
+\begin{center}
+\begin{pspicture}(-1,-1)(7,1)
+\pscircle(0,0){1}
+\psline{->}(1,0)(7,0)
+\psline[linecolor=blue](0,0)(6.2832,0)
+\psdots(0,0)(6.2832,0)
+\end{pspicture}
+\end{center}
+
+\item Construct the perpendicular bisector of the line segment constructed in the previous step in order to find its midpoint.  Each half of the bisected line segment has a length of $\pi$.
+
+\begin{center}
+\begin{pspicture}(-1,-2)(7,2)
+\pscircle(0,0){1}
+\psline{->}(1,0)(7,0)
+\psline[linecolor=red](0,0)(6.2832,0)
+\psarc[linecolor=blue](0,0){3.3}{-40}{40}
+\psarc[linecolor=blue](6.2832,0){3.3}{140}{220}
+\psline[linecolor=blue]{<->}(3.1416,-2)(3.1416,2)
+\psdots(0,0)(6.2832,0)(3.1416,0)
+\end{pspicture}
+\end{center}
+\end{enumerate}
+
+Another variant on compass and straightedge constructions is the one in which a \emph{marked ruler} (that is, a ruler with marks on it) is allowed as a tool.  Of course, with a marked ruler available, the straightedge is completely extraneous.  In such constructions, it is interesting to determine the minimum number of marks needed on the ruler to perform the construction.  Archimedes proved that an angle can be trisected using a compass and a ruler with one mark on it.  See the entry titled trisection of angle for more details.
+
+\begin{thebibliography}{9}
+\bibitem{unclejoe} Rotman, Joseph J. {\em A First Course in Abstract Algebra}.  Upper Saddle River, NJ: Prentice-Hall, 1996.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

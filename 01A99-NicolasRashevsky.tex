@@ -1,0 +1,235 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NicolasRashevsky}
+\pmcreated{2013-03-22 18:18:54}
+\pmmodified{2013-03-22 18:18:54}
+\pmowner{bci1}{20947}
+\pmmodifier{bci1}{20947}
+\pmtitle{Nicolas Rashevsky}
+\pmrecord{11}{40939}
+\pmprivacy{1}
+\pmauthor{bci1}{20947}
+\pmtype{Biography}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A99}
+\pmclassification{msc}{01A60}
+\pmclassification{msc}{01A70}
+%\pmkeywords{organismic set theory}
+%\pmkeywords{Mathematical Biophysics and Mathematical Biology}
+%\pmkeywords{Relations and predicates in Biology}
+%\pmkeywords{Biological principles}
+\pmrelated{AbstractRelationalBiology}
+\pmrelated{MathematicalBiology}
+\pmrelated{RobertRosen}
+\pmrelated{OrganismicSets3}
+\pmrelated{CategoryOfSets}
+\pmrelated{OrganismicSets2}
+\pmrelated{OrganismicSetTheory}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\usepackage{amsmath, amssymb, amsfonts, amsthm, amscd, latexsym}
+%%\usepackage{xypic}
+\usepackage[mathscr]{eucal}
+
+\setlength{\textwidth}{6.5in}
+%\setlength{\textwidth}{16cm}
+\setlength{\textheight}{9.0in}
+%\setlength{\textheight}{24cm}
+
+\hoffset=-.75in     %%ps format
+%\hoffset=-1.0in     %%hp format
+\voffset=-.4in
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+%\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem*{notation}{Notation}
+\newtheorem*{claim}{Claim}
+
+\renewcommand{\thefootnote}{\ensuremath{\fnsymbol{footnote%%@
+}}}
+\numberwithin{equation}{section}
+
+\newcommand{\Ad}{{\rm Ad}}
+\newcommand{\Aut}{{\rm Aut}}
+\newcommand{\Cl}{{\rm Cl}}
+\newcommand{\Co}{{\rm Co}}
+\newcommand{\DES}{{\rm DES}}
+\newcommand{\Diff}{{\rm Diff}}
+\newcommand{\Dom}{{\rm Dom}}
+\newcommand{\Hol}{{\rm Hol}}
+\newcommand{\Mon}{{\rm Mon}}
+\newcommand{\Hom}{{\rm Hom}}
+\newcommand{\Ker}{{\rm Ker}}
+\newcommand{\Ind}{{\rm Ind}}
+\newcommand{\IM}{{\rm Im}}
+\newcommand{\Is}{{\rm Is}}
+\newcommand{\ID}{{\rm id}}
+\newcommand{\GL}{{\rm GL}}
+\newcommand{\Iso}{{\rm Iso}}
+\newcommand{\Sem}{{\rm Sem}}
+\newcommand{\St}{{\rm St}}
+\newcommand{\Sym}{{\rm Sym}}
+\newcommand{\SU}{{\rm SU}}
+\newcommand{\Tor}{{\rm Tor}}
+\newcommand{\U}{{\rm U}}
+
+\newcommand{\A}{\mathcal A}
+\newcommand{\Ce}{\mathcal C}
+\newcommand{\D}{\mathcal D}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\mathcal F}
+\newcommand{\G}{\mathcal G}
+\newcommand{\Q}{\mathcal Q}
+\newcommand{\R}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\W}{\mathcal W}
+
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bZ}{\mathbb{Z}}
+
+\newcommand{\bfE}{\mathbf{E}}
+\newcommand{\bfX}{\mathbf{X}}
+\newcommand{\bfY}{\mathbf{Y}}
+\newcommand{\bfZ}{\mathbf{Z}}
+
+\renewcommand{\O}{\Omega}
+\renewcommand{\o}{\omega}
+\newcommand{\vp}{\varphi}
+\newcommand{\vep}{\varepsilon}
+
+\newcommand{\diag}{{\rm diag}}
+\newcommand{\grp}{{\mathbb G}}
+\newcommand{\dgrp}{{\mathbb D}}
+\newcommand{\desp}{{\mathbb D^{\rm{es}}}}
+\newcommand{\Geod}{{\rm Geod}}
+\newcommand{\geod}{{\rm geod}}
+\newcommand{\hgr}{{\mathbb H}}
+\newcommand{\mgr}{{\mathbb M}}
+\newcommand{\ob}{{\rm Ob}}
+\newcommand{\obg}{{\rm Ob(\mathbb G)}}
+\newcommand{\obgp}{{\rm Ob(\mathbb G')}}
+\newcommand{\obh}{{\rm Ob(\mathbb H)}}
+\newcommand{\Osmooth}{{\Omega^{\infty}(X,*)}}
+\newcommand{\ghomotop}{{\rho_2^{\square}}}
+\newcommand{\gcalp}{{\mathbb G(\mathcal P)}}
+
+\newcommand{\rf}{{R_{\mathcal F}}}
+\newcommand{\glob}{{\rm glob}}
+\newcommand{\loc}{{\rm loc}}
+\newcommand{\TOP}{{\rm TOP}}
+
+\newcommand{\wti}{\widetilde}
+\newcommand{\what}{\widehat}
+
+\renewcommand{\a}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+\newcommand{\del}{\partial}
+\newcommand{\ka}{\kappa}
+\newcommand{\si}{\sigma}
+\newcommand{\ta}{\tau}
+\newcommand{\med}{\medbreak}
+\newcommand{\medn}{\medbreak \noindent}
+\newcommand{\bign}{\bigbreak \noindent}
+\newcommand{\lra}{{\longrightarrow}}
+\newcommand{\ra}{{\rightarrow}}
+\newcommand{\rat}{{\rightarrowtail}}
+\newcommand{\oset}[1]{\overset {#1}{\ra}}
+\newcommand{\osetl}[1]{\overset {#1}{\lra}}
+\newcommand{\hr}{{\hookrightarrow}}
+\begin{document}
+\emph{Nicolas Rashevsky} (1899- 1973): American physicist and mathematical biologist who was the Founder of Mathematical Biophysics and Mathematical Biology, and also Professor of Mathematical Biophysics at the University of Chicago in the Committee for Mathematical Biology until 1968. He established also the first Mathematical Biophysics journal, the Bulletin of Mathematical Biophysics, later changed under his editorship to ``Bulletin of Mathematical Biology" to emphasize the transition towards abstract relational biology and relational theory of organismic sets beyond numerical and analytical functions characteristic of simple physical systems. His later efforts focused on topology of biological systems and the formulation of fundamental principles in biology and hierarchical organization of organisms and human societies. 
+
+Rashevsky's numerous publications and basic textbooks span almost half a century; among his first published papers was a physical, probabilistic treatment of molecular diffusion using a different approach from that of Albert Einstein's but with similar, concurrent solutions to the same problem. \\
+
+Some of his closest coworkers were: George Karreman (former Professor at the University of Pennsylvania), Herbert Landahl (former Professor at the University of California), Robert Rosen (his mathematics PhD student and later Professor of Biophysics at Dalhousie University), and Anthony Bartholomay (former Chairman of the Mathematical Medicine Department at Ohio State University).
+
+
+\begin{thebibliography}{99}
+
+\bibitem{Rashevsky1-yr1965}
+N. Rashevsky.: 1965, The Representation of Organisms in Terms of Predicates, \emph{Bulletin of Mathematical Biophysics} \textbf{27}: 477-491.
+
+\bibitem{Rashevsky2-1969}
+N. Rashevsky.: 1969, Outline of a Unified Approach to Physics, Biology and Sociology., \emph{Bulletin of Mathematical Biophysics} \textbf{31}: 159--198.
+
+\bibitem{ICB2}
+Baianu, I.C.: 1980, Natural Transformations of Organismic Structures.,
+\emph{Bulletin of Mathematical Biology},\textbf{42}: 431-446.
+
+\bibitem{Elsasser}
+Elsasser, M.W.: 1981, A Form of Logic Suited for Biology., In: Robert, Rosen, ed., \emph{Progress in Theoretical Biology},  Volume 6, Academic Press, New York and London, pp 23-62.
+
+\bibitem{ICB87}
+Baianu, I. C.: 1986--1987, Computer Models and Automata Theory in Biology and Medicine.,  in M. Witten (ed.), \emph{Mathematical Models in Medicine}, vol. 7., Ch.11 Pergamon Press, New York, 1513 -1577; URLs: \PMlinkexternal{CERN Preprint No. EXT-2004-072:}{http://en.scientificcommons.org/1857371}.
+
+\bibitem{BBGG2k6}
+Baianu I. C., Brown R., Georgescu G. and J. F. Glazebrook: 2006b, Complex Nonlinear Biodynamics in Categories, Higher Dimensional Algebra and \L ukasiewicz--Moisil Topos: Transformations of Neuronal, Genetic and Neoplastic Networks., \emph{Axiomathes}, \textbf{16} Nos. 1--2: 65--122.
+
+
+\bibitem{RRosen1}
+Rosen, R.: 1958a, A Relational Theory of Biological Systems \emph{Bulletin of Mathematical Biophysics} 
+\textbf{20}: 245-260.
+
+\bibitem{RRosen2}
+Rosen, R.: 1958b, The Representation of Biological Systems from the Standpoint of the 
+Theory of Categories., \emph{ Bulletin of Mathematical Biophysics} \textbf{20}: 317-341.
+
+\bibitem{RRosen60}
+Rosen, R. 1960. A quantum-theoretic approach to genetic problems. \emph{Bulletin of Mathematical Biophysics} 
+22: 227-255.
+
+\end{thebibliography}
+
+
+
+ 
+
+%%%%%
+%%%%%
+\end{document}

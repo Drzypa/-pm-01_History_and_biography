@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PoincaresTheoryOfFuchsianGroups}
+\pmcreated{2013-05-12 18:24:29}
+\pmmodified{2013-05-12 18:24:29}
+\pmowner{mairiwalker}{1000235}
+\pmmodifier{unlord}{1}
+\pmtitle{Poincar\'e's theory of Fuchsian groups}
+\pmrecord{2}{87407}
+\pmprivacy{1}
+\pmauthor{mairiwalker}{1}
+\pmtype{Topic}
+\pmclassification{msc}{01Axx}
+\pmclassification{msc}{51-03}
+\pmclassification{msc}{51M10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\section{Background}
+The origin of the Fuchsian group lies in the hypergeometric equation studied by Gauss, and later by Riemann, in the 19th century. Riemann's work, which developed ideas of analytic continuation, was extended by Fuchs in the mid to late 19th century to the study of general n$^{th}$ order linear ordinary differential equations whose solutions have no essential singularities \cite{JG}. Poincar\'{e}'s first encounter with the problem occured when he read Fuchs' May 1880 paper in Borchardt's Journal \cite{LF} concerning second order linear differential equations \cite{HP2}. In this paper, Fuchs studies the quotients of solutions to the equations, noting that if $f(x)$ and $g(x)$ are two such solutions, and
+\[
+\frac{f(x)}{g(x)}=z,
+\]
+then in certain cases $x$ is a meromorphic function of $z$. This result allows Fuchs to define functions, analogous to the doubly periodic elliptic functions, that would allow him to understand analytic continuation of the solutions around singularities \cite{JG}. By the end of that month, Poincar\'{e} had produced an essay, to be entered for the 1880 Acad\'emie des sciences prize in mathematical sciences, in which he addresses several issues from within Fuchs's paper. Most importantly, however, Poincar\'{e} provides the geometric insight needed to prove that inversion of the quotient leads to a well-defined function that is invariant under a certain group of linear fractional transformations \cite{HP2}.
+
+Poincar\'{e} goes on to give a detailed exposition of these so-called Fuchsian functions and groups in a series of papers published in \emph{Acta Mathematica} in 1882 and 1883, considering them of interest in their own right, and building up an analogy to the doubly periodic inverse functions of elliptic integrals. He begins, in \emph{Theorie des Groupes Fuchsiens} \cite{HP1}, by studying the properties of Fuchsian groups, showing how they are groups of non-Euclidean isometries, and that their periodicity can be described by non-Eulidean tesselations.
+
+\section{Theorie des Groupes Fuchsiens}
+The first two chapters of Poincar\'{e}'s \emph{Theorie des Groupes Fuchsiens} provide a basic theory of linear fractional transformations, much of which does not differ significantly from a modern account of the subject; familiar concepts such as cross-ratio preservation and transitivity are covered. Most importantly, however, Poincar\'e's study of the cross-ratio leads him to investigate congruence under groups of real linear fractional transformations, and from here he discovers the crucial fact that this congruence is congruence in the non-Euclidean geometry of Lobachevsky.
+
+From here Poincar\'e begins his study of Fuchsian groups: groups of real linear fractional transformations acting properly discontinuously on the complex upper half-plane. He notices the existence of a fundamental domain, investigating side-pairing and vertex cycles, and devising methods of transforming a fundamental domain into one that is convex. Poincar\'e's investigation into fundamental domains leads him to his famous theorem, known as Poincar\'e's polygon theorem, giving conditions for a non-Euclidean polygon, equipped with side-pairing transformations, to be the fundamental domain of a Fuchsian group.
+
+In the later chapters of \emph{Theorie des Groupes Fuchsiens} Poincar\'e looks at the surfaces formed by identifying paired edges and vertices of a fundamental domain, classifying them by genus using the Euler-Poincar\'e formula. These surfaces are of great interest to Poincar\'e as the qotients of solutions to differential equations originally motivating him become well-defined when viewed as functions on them; Poincar\'e's analogy to elliptic functions is complete.
+
+\section{A Modern Perspective}
+Various authors on Poincar\'e's papers on Fuchsian groups and functions have commented on the sheer speed at which he worked. This reflects in his work, which tends to lack rigour, and occasionally assumes non-trivial results without proof. That said, Poincar\'e's fundamental ideas were entirely correct, and his work needed little major development to turn it into the formal theory studied today. The developments that have occured are generally due to advances in the theories of Riemann surfaces that occured after Poincar\'e's time; with modern theory of covering spaces it is now possible to prove formally Poincar\'e's polygon theorem, and that the quotient produced by identifying the edges of a fundamental domain is indeed a Riemann surface.
+
+
+Translations of Poincar\'e's key papers can be found in John Stillwell's \emph{Papers on Fuchsian Functions}.
+
+\begin{thebibliography}{99}
+
+\bibitem{LF} Fuchs, L., 1880. \"Uber eine Klasse von Functionen mehrerer Variabeln, welche durch Umkehrung der Integrale von L\"osungen der linearen Differentialgleichungen mit rationalen Coefficienten entstehen. \emph{Journal f\"ur Mathematik}. 89, pp. 151-169.
+
+\bibitem{JG} Gray, J., 1986. \emph{Linear Differential Equations and Group Theory From Riemann to Poincar\'{e}}. Birkh\"{a}user.
+
+
+\bibitem{HP1} Poincar\'{e}, H., 1882. Theorie des Groupes Fuchsiens. \emph{Acta Mathematica}. 1, pp1-63.
+
+\bibitem{HP2} Poincar\'{e}, H., 1985. \emph{Papers on Fuchsian Functions}. Translated from French by J. Stillwell. Springer-Verlag.
+
+\end{thebibliography}
+
+\end{document}

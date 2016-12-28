@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HilbertsSixteenthProblem}
+\pmcreated{2013-03-22 16:05:54}
+\pmmodified{2013-03-22 16:05:54}
+\pmowner{Daume}{40}
+\pmmodifier{Daume}{40}
+\pmtitle{Hilbert's sixteenth problem}
+\pmrecord{8}{38161}
+\pmprivacy{1}
+\pmauthor{Daume}{40}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A67}
+\pmclassification{msc}{34C07}
+\pmclassification{msc}{01A60}
+\pmdefines{Hilbert number}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+% The below lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in
+% the page-image mode.
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{entire}
+
+The sixteenth problem of the Hilbert's problems is one of 
+the initial problem lectured at the International Congress 
+of Mathematicians.  
+The problem actually comes in two parts, the first of which is:
+\begin{quote}
+The maximum number of closed and separate branches which a plane algebraic curve of the $n$-th order can have has been determined by Harnack.  There arises the further question as to the relative position of the branches in the plane. As to curves of the $6$-th order, I have satisfied myself-by a complicated process, it is true-that of the eleven branches which they can have according to Harnack, by no means all can lie external to one another, but that one branch must exist in whose interior one branch and in whose exterior nine branches lie, or inversely. A thorough investigation of the relative position of the separate branches when their number is the maximum seems to me to be of very great interest, and not less so the corresponding investigation as to the number, form, and position of the sheets of an algebraic surface in space. Till now, indeed, it is not even known what is the maxi mum number of sheets which a surface of the $4$-th order in three dimensional space can really have.\cite{HD}
+\end{quote}
+and the second problem:
+\begin{quote}
+In connection with this purely algebraic problem, I wish to bring forward a question which, it seems to me, may be attacked by the same method of continuous variation of coefficients, and whose answer is of corresponding value for the topology of families of curves defined by differential equations. This is the question as to the maximum number and position of Poincar\'e's boundary cycles (cycles limites) for a differential equation of the first order and degree of the form
+$$\frac{d\;y}{d\;x} = \frac{Y}{X}$$
+where $X$ and $Y$ are rational integral functions of the $n$-th degree in $x$ and $y$. Written homogeneously, this is
+$$X\left( y\frac{d\;z}{d\;t} - z\frac{d\;y}{d\;t}\right)+
+Y\left( z\frac{d\;x}{d\;t} - x\frac{d\;z}{d\;t}\right)+
+Z\left( x\frac{d\;y}{d\;t} - y\frac{d\;x}{d\;t}\right)=0$$
+where $X$, $Y$, and $Z$ are rational integral homogeneous functions of the $n$-th degree in $x$, $y$, $z$, and the latter are to be determined as functions of the parameter $t$.
+\cite{HD}
+\end{quote}
+\textbf{The first part:}\\
+
+\textbf{The second part:}\\
+Find a maximum natural number $H(n)$ of the number of limit cycles 
+and relative position of limit cycles of a vector field
+\begin{eqnarray*}\label{sys:pol_deg_n}
+\dot{x} = p(x,y) &=&\sum_{i+j=0}^n a_{ij}x^iy^j \\
+\dot{y} = q(x,y) &=& \sum_{i+j=0}^n b_{ij}x^iy^j.
+\end{eqnarray*}
+\cite{DRR}\\
+
+As of now neither part of the problem \textit{(i.e. the bound and the positions of the limit cycles)} are solved.  The difficulty of the problem can be
+demonstrated by the fact that even the quadratic case $H(2)$ is not solved (see  Hilbert's 16th problem for quadratic vector fields).  The only known case 
+is the linear case where $H(1)=0$.\\
+
+\textbf{Definition:}\\
+$H(n)$ is called the \emph{Hilbert number}.\\
+
+\textbf{Progress and attempts of the second part:}
+\begin{itemize}
+\item 1923, $H(n)$ is finite for a polynomial system of degree $n$ (i.e. finite number of limit cycle) by Dulac \cite{DH} (see Dulac's Theorem).
+\item 1981, An error is found in the proof of Dulac of Dulac's Theorem 
+by Yulij Ilyashenko.
+\item 1988, Jean Ecalle\cite{EJ}, Jacques Martinet, Robert Moussu, Jean Pierre Ramis and independently Yulij Ilyashenko\cite{IY91} prove Dulac's Theorem.
+\item 1995, C. J. Christopher shows the following lower bound $H(n)\geq n^2\log n$.\cite{CL}
+\end{itemize}
+
+\textbf{See also:}
+\begin{itemize}
+\item David Hilbert, \PMlinkexternal{Mathematische Probleme}{http://www.mathematik.uni-bielefeld.de/~kersten/hilbert/rede.html}
+\item David Hilbert, \PMlinkexternal{Mathematical Problems}{http://aleph0.clarku.edu/~djoyce/hilbert/problems.html}
+\item Wikipedia, \PMlinkexternal{Hilbert's sixteenth problem}{http://en.wikipedia.org/wiki/Hilberts_sixteenth_problem}
+\end{itemize}
+
+\begin{thebibliography}{10}
+\bibitem[CL]{CL}
+{\scshape C. J. Christopher \& N. G. Lloyd}, \emph{Polynomial systems: a lower bound for the
+Hilbert numbers}, Proc. Roy. Soc. London Ser. A 450 (1995), no. 1938, 219-224.
+
+\bibitem[DH]{DH}
+{\scshape Henry Dulac}, \emph{Sur les cycles limite}, Bull. Soc. Math. France
+51 (1923), 45-188.
+
+\bibitem[EJ]{EJ}
+{\scshape J. \'Ecalle}, \emph{Introduction aux fonctions analysables et preuve
+constructive de la conjecture de Dulac}, Hermann, Paris, 1992.
+
+\bibitem[HD]{HD}
+{\scshape David Hilbert}, \emph{Mathematical Problems (translated by Dr. Maby Winton Newson)}, Bulletin of the American Mathematical Society 8 (1902), 437-479.
+
+\bibitem[IY91]{IY91}
+{\scshape Yu. Ilyashenko}, \emph{Finiteness theorems for limit cycles}, 
+American Mathematical Society, Providence, RI, 1991. 
+
+\bibitem[IY02]{IY02}
+{\scshape Yu. Ilyashenko}, \emph{Centennial History of Hilbert's 16th Problem}, Bulletin of the American Mathematical Society, Vol. 39, no. 3 (2002), 301-354. 
+
+\bibitem[DRR]{DRR} Dumortier, F., Roussarie, R., Rousseau, C.: Hilbert's 16th Problem for Quadratic Vector Fields. Journal of Differential Equations 110, 86-133, 1994.
+\end{thebibliography}
+
+\textbf{note:}
+Under construction! If someone can help with the first part that would be great. I will add reference to the historical notes when I go to school.
+%%%%%
+%%%%%
+\end{document}

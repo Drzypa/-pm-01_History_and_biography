@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TrisectionOfAngle}
+\pmcreated{2013-03-22 17:16:35}
+\pmmodified{2013-03-22 17:16:35}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{trisection of angle}
+\pmrecord{11}{39616}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{51M15}
+\pmrelated{VariantsOnCompassAndStraightedgeConstructions}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+\PMlinkescapeword{label}
+\PMlinkescapeword{measure}
+\PMlinkescapeword{ruler}
+
+Given an angle of \PMlinkname{measure}{AngleMeasure} $\alpha$ such that $0<\alpha \le \frac{\pi}{2}$, one can construct an angle of measure $\frac{\alpha}{3}$ using a compass and a \PMlinkname{ruler}{MarkedRuler} with one mark on it as follows:
+
+\begin{enumerate}
+\item Construct a circle $c$ with the \PMlinkname{vertex}{Vertex5} $O$ of the angle as its center.  Label the intersections of this circle with the rays of the angle as $A$ and $B$.  Mark the length $OB$ on the ruler.
+
+\begin{center}
+\begin{pspicture}(-2,-3)(3,3)
+\rput[l](-2,0){.}
+\rput[r](3,2){.}
+\psline{->}(0,0)(3,0)
+\psline{->}(0,0)(3,2)
+\pscircle[linecolor=blue](0,0){2}
+\psdots(0,0)(2,0)(1.6641,1.1094)
+\rput[a](0,-0.3){$O$}
+\rput[a](2.1,-0.3){$A$}
+\rput[a](1.7,1.4){$B$}
+\rput[a](0,-2.2){$c$}
+\end{pspicture}
+\end{center}
+
+\item Draw the ray $\overrightarrow{AO}$.
+
+\begin{center}
+\begin{pspicture}(-5,-3)(3,3)
+\rput[l](-5,0){.}
+\rput[r](3,2){.}
+\psline{->}(0,0)(3,0)
+\psline{->}(0,0)(3,2)
+\pscircle(0,0){2}
+\psline[linecolor=blue]{->}(2,0)(-5,0)
+\psdots(0,0)(2,0)(1.6641,1.1094)
+\rput[a](0,-0.3){$O$}
+\rput[a](2.1,-0.3){$A$}
+\rput[a](1.7,1.4){$B$}
+\rput[a](0,-2.2){$c$}
+\end{pspicture}
+\end{center}
+
+\item Use the marked ruler to determine $C\in c$ and $D\in \overrightarrow{AO}$ such that $CD=OB$ and $B$, $C$, and $D$ are collinear.  Draw the line segment $\overline{BD}$.  Then the angle measure of $\angle CDO$ is $\frac{\alpha}{3}$.  (The line segment $\overline{OC}$ is drawn in red.  Having this line segment drawn is useful for reference purposes for the justification of the construction.)
+
+\begin{center}
+\begin{pspicture}(-5,-3)(3,3)
+\rput[l](-5,0){.}
+\rput[r](3,2){.}
+\psline{<->}(-5,0)(3,0)
+\psline{->}(0,0)(3,2)
+\pscircle(0,0){2}
+\psline[linecolor=blue](-3.923445,0)(1.6641,1.1094)
+\psline[linecolor=red](0,0)(-1.9617,0.3895)
+\psdots(0,0)(2,0)(1.6641,1.1094)(-1.9617,0.3895)(-3.923445,0)
+\rput[a](0,-0.3){$O$}
+\rput[a](2.1,-0.3){$A$}
+\rput[a](1.7,1.4){$B$}
+\rput[a](0,-2.2){$c$}
+\rput[r](-2,0.6){$C$}
+\rput[a](-3.923445,-0.3){$D$}
+\end{pspicture}
+\end{center}
+\end{enumerate}
+
+Let $m$ denote the measure of an angle.  Then this construction is justified by the following:
+
+\begin{itemize}
+\item Since $\angle AOB$ is an exterior angle of $\triangle BOD$, we have that $m(\angle AOB)=m(\angle OBD)+m(\angle ODB)$;
+\item Since $OC=OB=CD$, we have that $\triangle BOC$ and $\triangle OCD$ are isosceles triangles;
+\item Since the angles of an isosceles triangle are congruent, $m(\angle OBC)=m(\angle OCB)$ and $m(\angle COD)=m(\angle CDO)$;
+\item Since $\angle OCB$ is an exterior angle of $\triangle OCD$, we have that $m(\angle OCB)=m(\angle COD)+m(\angle CDO)$;
+\item Note that $\angle OBC=\angle OBD$ and $\angle ODB=\angle CDO$;
+\item Thus,
+
+\begin{center}
+$\begin{array}{rl}
+\alpha & =m(\angle AOB) \\
+& =m(\angle OBD)+m(\angle ODB) \\
+& =m(\angle OBC)+m(\angle CDO) \\
+& =m(\angle OCB)+m(\angle CDO) \\
+& =m(\angle COD)+m(\angle CDO)+m(\angle CDO) \\
+& =3m(\angle CDO). \end{array}$
+\end{center}
+\end{itemize}
+
+Note that, since angles of measure $\frac{\pi}{6}$, $\frac{\pi}{3}$, and $\frac{\pi}{2}$ are constructible using compass and straightedge, this procedure can be extended to trisect any angle of measure $\beta$ such that $0<\beta\le 2\pi$:
+
+\begin{itemize}
+\item If $0<\beta\le\frac{\pi}{2}$, then use the construction given above.
+\item If $\frac{\pi}{2}<\beta\le\pi$, then trisect an angle of measure $\beta-\frac{\pi}{2}$ and add on an angle of measure $\frac{\pi}{6}$ to the result.
+\item If $\pi<\beta\le\frac{3\pi}{2}$, then trisect an angle of measure $\beta-\pi$ and add on an angle of measure $\frac{\pi}{3}$ to the result.
+\item If $\frac{3\pi}{2}<\beta\le 2\pi$, then trisect an angle of measure $\beta-\frac{3\pi}{2}$ and add on an angle of measure $\frac{\pi}{2}$ to the result.
+\end{itemize}
+
+This construction is attributed to Archimedes.
+
+\begin{thebibliography}{9}
+\bibitem{unclejoe} Rotman, Joseph J. {\em A First Course in Abstract Algebra}. Upper Saddle River, NJ: Prentice-Hall, 1996.
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}
