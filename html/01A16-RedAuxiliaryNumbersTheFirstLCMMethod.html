@@ -1,0 +1,350 @@
+<!DOCTYPE html><html>
+<head>
+<title>Red Auxiliary numbers, the first LCM method</title>
+<!--Generated on Thu Feb  8 19:07:27 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Red Auxiliary numbers, the first LCM method</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Red auxiliary numbers, from Wikipedia</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Ahmes practiced selections of a least common multiple (LCM) m in RMP 7-23. The majority of Rhind Mathematical Papyrus problems report red numbers that assisted conversions of rational numbers n/p scaled by an LCM m to mn/mp. In RMP 36, and all other prolbems, the red auxiliary numbers were summed to numerator mn. Ahmes obtained an optimized unit fraction series.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For examples, 3/53 was scaled by LCM 20 to 60/1060 that considered auxiliary numerator (53 + 4 + 2 + 1)/1060 was written out as 1/20 + 1/265 + 1/530 + 1/1060, a component of solving the unity statement 53/53 = 2/53 + 3/53 + 5/53 + 15/53 + 28/53.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">In RMP 37 two additional red number methods specified that any series of unit fractions could be individually inverted to a red number numerator. Ahmes showed that 1/4 and 1/8 could be scaled by LCM 72 playfully recalling that non-optimal unit fractional series were available as proofs of denominator. Ahmes recorded 1/4 = 72/288 = (9 + 18 + 24 +3 + 8 + 1 +8 + 1)/288 = 1/32 + 1/16 + 1/12 +1/96 + 1/36 + 1/288 + 1/36 + 1/288 in an out-of order EMLR-like series. Recording 1/8 = 72/576 = (8 + 36 + 18 + 9 + 1)/576 = 1/72 + 1/16 + 1/32 + 1/64 + 1/576, another EMLR-like series.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Red auxiliary numbers had been noted by historians for 130 years. Most historians muddled the historical purpose and applications of the red scribal data. An initial purpose allowed LCM m to be selected that converted 2/n rational numbers into a table rational numbers to optimized, but not always optimal, Egyptian fraction series. Math historians like F. Hultsch began to parse basic aspects of the red auxiliary number applications in the 19th century. Early math historians recognized that red numbers were connected to LCM, but the specific context was left vague until the 21st century.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">It took over 120 years years to fully parse the RMPs three applications of red auxiliary numbers. As a review, Ahmes’ red auxiliary problems was summarized by George G. Joseph, ”Crest of the Peacock” in 1993, as fragmented details from which ancient scribal students learned to apply the method. On page 37, example 3.7 Joseph reports:</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Complete 2/3 + 1/4 + 1/28 to 1.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">This meant: solve</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="2/3+1/4+1/28+x=1" display="block"><mrow><mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>28</mn></mrow><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(example 3.7)</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">The lowest common denominator (LCM) was not 28, or 84, but rather 42. Unskilled modern students would multiple 3 times 28 finding an LCM of 84. But 42 was sufficient for Egyptian scribes as noted by:</p>
+</div>
+<div id="p10" class="ltx_para">
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="84/3+42/4+42/28+42x=42" display="block"><mrow><mrow><mrow><mn>84</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>42</mn><mo>/</mo><mn>4</mn></mrow><mo>+</mo><mrow><mn>42</mn><mo>/</mo><mn>28</mn></mrow><mo>+</mo><mrow><mn>42</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>42</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(example 3.7.1)</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">as written in fractions</p>
+</div>
+<div id="p12" class="ltx_para">
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="28+(10+1/2)+(1+1/2)+2=42" display="block"><mrow><mrow><mn>28</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>10</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>=</mo><mn>42</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(example 3.7.2)</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">with 42 marked in red. Modern algebra would have included 42x, solving</p>
+</div>
+<div id="p14" class="ltx_para">
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="42x=2" display="block"><mrow><mrow><mn>42</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>2</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p15" class="ltx_para">
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="x=2/42=1/21" display="block"><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>/</mo><mn>42</mn></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>21</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(example 3.7.3)</p>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">meaning scribes would have a written final series in the form:</p>
+</div>
+<div id="p17" class="ltx_para">
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="2/3+1/4+1/28+1/21=1" display="block"><mrow><mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>28</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>21</mn></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(example 3.7.4)
+</p>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">The RMP included three problems that asked Ahmes to complete a series of fractions adding to a given number. Two problems, RMP 21 and RMP 23, follow:</p>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">RMP 21: Complete</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="2/3+1/15+x=1" display="block"><mrow><mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>15</mn></mrow><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">use red auxiliary number 30 to find</p>
+</div>
+<div id="p21" class="ltx_para">
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="60/3+30/15+30x=30" display="block"><mrow><mrow><mrow><mn>60</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>30</mn><mo>/</mo><mn>15</mn></mrow><mo>+</mo><mrow><mn>30</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>30</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p22" class="ltx_para">
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="20+2+8=30" display="block"><mrow><mrow><mn>20</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>8</mn></mrow><mo>=</mo><mn>30</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p23" class="ltx_para">
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="30x=8" display="block"><mrow><mrow><mn>30</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>8</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p24" class="ltx_para">
+<table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex11.m1" class="ltx_Math" alttext="x=8/30=4/15=(3+1)/15=1/5+1/15" display="block"><mrow><mi>x</mi><mo>=</mo><mrow><mn>8</mn><mo>/</mo><mn>30</mn></mrow><mo>=</mo><mrow><mn>4</mn><mo>/</mo><mn>15</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>15</mn></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>5</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>15</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p25" class="ltx_para">
+<p class="ltx_p">such that:</p>
+</div>
+<div id="p26" class="ltx_para">
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="2/3+1/5+2/15=1" display="block"><mrow><mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>5</mn></mrow><mo>+</mo><mrow><mn>2</mn><mo>/</mo><mn>15</mn></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">was written as:</p>
+</div>
+<div id="p28" class="ltx_para">
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="2/3+1/5+1/10+1/30=1" display="block"><mrow><mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>5</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>10</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>30</mn></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">RMP 23: Complete</p>
+<table id="S0.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex14.m1" class="ltx_Math" alttext="1/4+1/8+1/10+1/35+1/45+x=2/3" display="block"><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>8</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>10</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>35</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>45</mn></mrow><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p30" class="ltx_para">
+<p class="ltx_p">use red auxiliary 45 to compute</p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="x=1/9+1/40" display="block"><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>9</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>40</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p31" class="ltx_para">
+<p class="ltx_p">In addition, RMP 36 solved 2/53, 3/53, 5/53, 28/53 and 30/53 by finding red auxiliary numerators considering:</p>
+</div>
+<div id="p32" class="ltx_para">
+<p class="ltx_p">2/53*(30/30) = 60/1590 = (53 + 5 + 2)/1590 = 1/20 + 1/318 + 1/795</p>
+</div>
+<div id="p33" class="ltx_para">
+<p class="ltx_p">3/53*(20/20) = 60/1060 = (53 + 4 + 2 + 1)/1060 = 1/20 + 1/265 + 1/530 + 1/1060</p>
+</div>
+<div id="p34" class="ltx_para">
+<p class="ltx_p">5/53*(12/12) = 60/636 = (53 + 4 + 2 + 1)/636 = 1/12 + 1/159 + 1/318 + 1/636</p>
+</div>
+<div id="p35" class="ltx_para">
+<p class="ltx_p">28/53*(2/2) = 56/106 = (53 + 2 + 1)/106 = 1/2 + 1/53 + 1/106</p>
+</div>
+<div id="p36" class="ltx_para">
+<p class="ltx_p">and,</p>
+</div>
+<div id="p37" class="ltx_para">
+<p class="ltx_p">30/53 = 2/53 + 28/53</p>
+</div>
+<div id="p38" class="ltx_para">
+<p class="ltx_p">with numerators (53 + 5 + 2), (53 + 4 + 2 + 1) and (53 + 2 + 1) written in red.</p>
+</div>
+<div id="p39" class="ltx_para">
+<p class="ltx_p">Note that 30/53 can not be solved by finding one LCM integer. In RMP 31, 28/97 also can not be solved by finding one LCM. In both cases the 2/n table allowed conversions of 30/53 and 28/97 to optimized unit fraction series to be found. In the 30/53 case, 30/53 became 2/53 + 28/53. In the 28/96 case, 28/97 was parsed to 2/97 + 26/97. That is, the 2/n table allowed almost any rational number, n/p and n/pq, to be converted to an optimized, but not always optimal unit fraction series, by first considerring n/p = 2/p + (n-2)/p, and n/pq = 2/pq + (n- 2)/pq.</p>
+</div>
+<div id="p40" class="ltx_para">
+<p class="ltx_p">It turns out that the Egyptian Mathematical Leather Roll (EMLR) and the RMP 2/n table employed LCM’s to convert rational numbers to Egyptian fraction series. Interestingly, the EMLR used non-optimal LCMs allowing students to select any LCM guess and work out an Egyptian fraction series. More importantly, the RMP began with 1/3 of the text reporting 51 2/n optimized, but not always optimal, Egyptian fraction series.</p>
+</div>
+<div id="p41" class="ltx_para">
+<p class="ltx_p">That is, red auxiliary numbers defined a core method that math historians pondered for 130 years, but did not see. Visibility began to appear around 2002 with publications of the EMLR, the Akhmim Wooden Tablet, the Ebers Papyrus, and other Egyptian fraction texts.</p>
+</div>
+<div id="p42" class="ltx_para">
+<p class="ltx_p">Understanding Ahmes’ ’red auxiliary’ numbers, and its proto-number theory properties, allows RMP arithmetic methods to come into focus. Recent journal papers report Egyptian fraction arithmetic in updated ways. One of the more important updates reports scribal multiplication and division of rational numbers as inverse operations. The ancient arithmetic operations had not followed duplation multiplication, as proposed for over 100 years, but the ancient operations in RMP 38, and other problems, looked and acted more like modern multiplication and division operations.
+</p>
+</div>
+<div id="p43" class="ltx_para">
+<p class="ltx_p">Three 2001 Russian math encyclopedia entries discuss this Egyptian fractions topic beginning with a modern definition of LCMs. The encyclopedia was published on-line by Springer, with one <span class="ltx_text ltx_font_typewriter">http://eom.springer.de/a/a011920.htm</span>entry suggesting ancient LCMs were known to Ahmes by writing:</p>
+</div>
+<div id="p44" class="ltx_para">
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="3/11=1/6+1/11+1/66" display="block"><mrow><mrow><mn>3</mn><mo>/</mo><mn>11</mn></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>11</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>66</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p45" class="ltx_para">
+<p class="ltx_p">and, converting</p>
+</div>
+<div id="p46" class="ltx_para">
+<table id="S0.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex17.m1" class="ltx_Math" alttext="3/11*(6/6)=(18/66)=(11+6+1)/66=1/6+1/11+1/66" display="block"><mrow><mrow><mrow><mn>3</mn><mo>/</mo><mn>11</mn></mrow><mo>*</mo><mrow><mo stretchy="false">(</mo><mrow><mn>6</mn><mo>/</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mn>18</mn><mo>/</mo><mn>66</mn></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>66</mn></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>11</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>66</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p47" class="ltx_para">
+<p class="ltx_p">The <span class="ltx_text ltx_font_typewriter">http://eom.springer.de/F/f041200.htm</span>first entry mentions modern LCMs, and did not attempt to take an ancient leap back in time. Had a formal hypothesis been offered a clear path from the present to a 4,000 year old ancient academic discussion would have be set in an interdisciplinary context. Proof, or disproof, that Ahmes thought in a modern version LCMs could then be formally presented.</p>
+</div>
+<div id="p48" class="ltx_para">
+<p class="ltx_p">A <span class="ltx_text ltx_font_typewriter">http://eom.springer.de/A/a013260.htm</span>third Russian entry generally reports an ancient aliquot fraction or ratio idea (Russian terms for red auxiliary numbers) without identifying a hypothetical use of ancient LCMs.</p>
+</div>
+<div id="p49" class="ltx_para">
+<p class="ltx_p">Considering the three Russian entries, Ahmes’ three LCM practice problems, and Ahmes’ 2/n table patterns as one topic, a clear outline of a proof that Ahmes did use a modern LCM definition is provided.</p>
+</div>
+<div id="p50" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Red Auxiliary numbers, the first LCM method</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">RedAuxiliaryNumbersTheFirstLCMMethod</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2015-06-15 15:43:03</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2015-06-15 15:43:03</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">milogardner (13112)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">milogardner (13112)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">39</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">milogardner (13112)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 01A16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Thu Feb  8 19:07:27 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
